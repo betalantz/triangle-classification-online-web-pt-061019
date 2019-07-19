@@ -1,3 +1,5 @@
+require 'pry'
+
 class Triangle
 
   attr_accessor :a, :b, :c
@@ -18,7 +20,7 @@ class Triangle
       else
         :scalene
       end
-
+    binding.pry
   end
 
   def validate_triangle
