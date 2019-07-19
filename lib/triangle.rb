@@ -13,13 +13,13 @@ class Triangle
   def kind
     validate_triangle
     case
-      when @a == @b && @a == @c && @b == @c
-        :equilateral
-      when @a == @b || @a == @c || @b == @c
-        :isosceles
-      else
-        :scalene
-      end
+    when @a == @b && @a == @c && @b == @c
+      :equilateral
+    when @a == @b || @a == @c || @b == @c
+      :isosceles
+    else
+      :scalene
+    end
     binding.pry
   end
 
