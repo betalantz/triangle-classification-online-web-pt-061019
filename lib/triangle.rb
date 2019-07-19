@@ -11,7 +11,7 @@ class Triangle
   end
 
   def kind
-    validate_triangle
+    puts validate_triangle
     case
     when @a == @b && @a == @c && @b == @c
       :equilateral
@@ -20,7 +20,6 @@ class Triangle
     else
       :scalene
     end
-    binding.pry
   end
 
   def validate_triangle
