@@ -10,7 +10,7 @@ class Triangle
 
   def kind
     validate_triangle
-    case @a, @b, @c
+    case self
       when @a == @b && @a == @c && @b == @c
         :equilateral
       when @a == @b || @a == @c || @b == @c
