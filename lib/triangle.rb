@@ -11,7 +11,7 @@ class Triangle
   end
 
   def kind
-    puts validate_triangle
+    validate_triangle
     case
     when @a == @b && @a == @c && @b == @c
       :equilateral
